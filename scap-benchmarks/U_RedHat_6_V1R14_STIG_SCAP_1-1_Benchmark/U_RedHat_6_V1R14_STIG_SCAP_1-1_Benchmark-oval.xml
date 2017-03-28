@@ -415,7 +415,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-27181-7" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_lchown" />
       </metadata>
@@ -613,7 +613,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-27173-4" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_chown" />
       </metadata>
@@ -704,7 +704,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-27185-8" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_setxattr" />
       </metadata>
@@ -760,7 +760,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-27182-5" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_lremovexattr" />
       </metadata>
@@ -890,7 +890,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-27183-3" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_lsetxattr" />
       </metadata>
@@ -925,7 +925,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-27177-5" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_fchown" />
       </metadata>
@@ -1089,7 +1089,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-27174-2" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_fchmod" />
       </metadata>
@@ -1605,7 +1605,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-27179-1" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_fremovexattr" />
       </metadata>
@@ -1704,7 +1704,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-27178-3" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_fchownat" />
       </metadata>
@@ -1725,7 +1725,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-27180-9" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_fsetxattr" />
       </metadata>
@@ -1923,7 +1923,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-26280-8" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_chmod" />
       </metadata>
@@ -2046,7 +2046,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-27175-9" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_fchmodat" />
       </metadata>
@@ -2569,7 +2569,7 @@
           <platform>Red Hat Enterprise Linux 6</platform>
         </affected>
         <reference ref_id="CCE-27184-1" source="http://cce.mitre.org" />
-        <description>The changing of file permissions and attributes should be 
+        <description>The changing of file permissions and attributes should be
       audited.</description>
         <reference source="mil.disa.fso.redhat.rhel6" ref_id="audit_rules_dac_modification_removexattr" />
       </metadata>
@@ -4779,16 +4779,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the lchown syscall.  
+         Watch for the lchown syscall.
          Assume user id's start above 500 and watch for lchowns by them
          Watch for lchowns by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S lchown -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+lchown[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -4798,16 +4798,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the lchown syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the lchown syscall.
          Assume user id's start above 500 and watch for lchowns by them
          Watch for lchowns by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S lchown -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b64[\s]+)(?:.*-S[\s]+lchown[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -4883,16 +4883,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the chown syscall.  
+         Watch for the chown syscall.
          Assume user id's start above 500 and watch for chowns by them
          Watch for chowns by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S chown -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+chown[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -4902,16 +4902,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the chown syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the chown syscall.
          Assume user id's start above 500 and watch for chowns by them
          Watch for chowns by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S chown -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b64[\s]+)(?:.*-S[\s]+chown[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -4987,16 +4987,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the setxattr syscall.  
+         Watch for the setxattr syscall.
          Assume user id's start above 500 and watch for setxattrs by them
          Watch for setxattrs by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S setxattr -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+setxattr[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5006,16 +5006,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the setxattr syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the setxattr syscall.
          Assume user id's start above 500 and watch for setxattrs by them
          Watch for setxattrs by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S setxattr -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b64[\s]+)(?:.*-S[\s]+setxattr[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5042,16 +5042,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the lremovexattr syscall.  
+         Watch for the lremovexattr syscall.
          Assume user id's start above 500 and watch for any lremovexattr by them
          Watch for lremovexattrs by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S lremovexattr -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+lremovexattr[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5061,16 +5061,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the lremovexattr syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the lremovexattr syscall.
          Assume user id's start above 500 and watch for any lremovexattr by them
          Watch for lremovexattrs by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S lremovexattr -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b64[\s]+)(?:.*-S[\s]+lremovexattr[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5175,16 +5175,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the lsetxattr syscall.  
+         Watch for the lsetxattr syscall.
          Assume user id's start above 500 and watch for lsetxattr by them
          Watch for lsetxattrs by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S lsetxattr -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+lsetxattr[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5194,16 +5194,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the lsetxattr syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the lsetxattr syscall.
          Assume user id's start above 500 and watch for lsetxattr by them
          Watch for lsetxattrs by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S lsetxattr -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b64[\s]+)(?:.*-S[\s]+lsetxattr[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5218,16 +5218,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the fchown syscall.  
+         Watch for the fchown syscall.
          Assume user id's start above 500 and watch for fchowns by them
          Watch for fchowns by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S fchown -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+fchown[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5237,16 +5237,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the fchown syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the fchown syscall.
          Assume user id's start above 500 and watch for fchowns by them
          Watch for fchowns by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S fchown -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b64[\s]+)(?:.*-S[\s]+fchown[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5298,16 +5298,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the fchmod syscall.  
+         Watch for the fchmod syscall.
          Assume user id's start above 500 and watch for fchmods by them
          Watch for fchmods by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S fchmod -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+fchmod[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5317,16 +5317,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the fchmod syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the fchmod syscall.
          Assume user id's start above 500 and watch for fchmods by them
          Watch for fchmods by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S fchmod -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b64[\s]+)(?:.*-S[\s]+fchmod[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5512,16 +5512,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the fremovexattr syscall.  
+         Watch for the fremovexattr syscall.
          Assume user id's start above 500 and watch for any fremovexattr by them
          Watch for fremovexattrs by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S fremovexattr -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+fremovexattr[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5531,16 +5531,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the fremovexattr syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the fremovexattr syscall.
          Assume user id's start above 500 and watch for any fremovexattr by them
          Watch for fremovexattrs by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S fremovexattr -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b64[\s]+)(?:.*-S[\s]+fremovexattr[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5576,16 +5576,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the fchownat syscall.  
+         Watch for the fchownat syscall.
          Assume user id's start above 500 and watch for fchownats by them
          Watch for fchownats by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S fchownat -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+fchownat[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5595,16 +5595,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the fchownat syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the fchownat syscall.
          Assume user id's start above 500 and watch for fchownats by them
          Watch for fchownats by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S fchownat -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b64[\s]+)(?:.*-S[\s]+fchownat[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5614,16 +5614,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the fsetxattr syscall.  
+         Watch for the fsetxattr syscall.
          Assume user id's start above 500 and watch for any fsetxattr by them
          Watch for fsetxattrs by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S fsetxattr -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+fsetxattr[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5633,16 +5633,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the fsetxattr syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the fsetxattr syscall.
          Assume user id's start above 500 and watch for any fsetxattr by them
          Watch for fsetxattrs by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S fsetxattr -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b64[\s]+)(?:.*-S[\s]+fsetxattr[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5772,16 +5772,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the chmod syscall.  
+         Watch for the chmod syscall.
          Assume user id's start above 500 and watch for any chmod by them
          Watch for chmods by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S chmod -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+chmod[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5791,16 +5791,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the chmod syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the chmod syscall.
          Assume user id's start above 500 and watch for any chmod by them
          Watch for chmods by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S chmod -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b64[\s]+)(?:.*-S[\s]+chmod[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5839,16 +5839,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the fchmodat syscall.  
+         Watch for the fchmodat syscall.
          Assume user id's start above 500 and watch for fchmodats by them
          Watch for fchmodats by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S fchmodat -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+fchmodat[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -5858,16 +5858,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the fchmodat syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the fchmodat syscall.
          Assume user id's start above 500 and watch for fchmodats by them
          Watch for fchmodats by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S fchmodat -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^[\s]*-a[\s](?:always,exit|exit,always)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+fchmodat[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -6099,16 +6099,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
+         Syscall numbers between x64/x32 dont always line up so split them by
            arch.  Remember that we can still have x32 libs on x64
-         Watch for the removexattr syscall.  
+         Watch for the removexattr syscall.
          Assume user id's start above 500 and watch for any removexattr by them
          Watch for removexattrs by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b32 -S removexattr -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^-[Aa][\s]*(?:exit,always|always,exit)+(?:.*-F[\s]+arch=b32[\s]+)(?:.*-S[\s]+removexattr[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -6118,16 +6118,16 @@
       <ind:filepath datatype="string">/etc/audit/audit.rules</ind:filepath>
       <!-- What's going on here?
          Ensure we have both exit and always in the action list
-         Syscall numbers between x64/x32 dont always line up so split them by 
-           arch. Remember that we can still have x32 libs on x64 
-         Watch for the removexattr syscall.  
+         Syscall numbers between x64/x32 dont always line up so split them by
+           arch. Remember that we can still have x32 libs on x64
+         Watch for the removexattr syscall.
          Assume user id's start above 500 and watch for any removexattr by them
          Watch for removexattrs by users without a set loginuid (4294967295/-1)
-         Ensure that a key is defined for it but we aren't especially concerned 
+         Ensure that a key is defined for it but we aren't especially concerned
            with what it is
          Some regex foo to account for various ways this could be defined.
 
-         A typical pattern would be: 
+         A typical pattern would be:
          -a always,exit -F arch=b64 -S removexattr -F auid>=500 -F auid!=4294967295 -k perms
     -->
       <ind:pattern operation="pattern match" datatype="string">^-[Aa][\s]*(?:exit,always|always,exit)+(?:.*-F[\s]+arch=b64[\s]+)(?:.*-S[\s]+removexattr[\s]+)(?:.*-F\s+auid&gt;=500[\s]+)(?:.*-F\s+auid!=(?:-1|4294967295)[\s]+).*-k[\s]+[\S]+[\s]*$</ind:pattern>
@@ -7274,4 +7274,3 @@
     <external_variable comment="number of failed login attempts allowed" datatype="int" id="oval:mil.disa.fso.redhat.rhel6:var:3276" version="10" />
   </variables>
 </oval_definitions>
-
