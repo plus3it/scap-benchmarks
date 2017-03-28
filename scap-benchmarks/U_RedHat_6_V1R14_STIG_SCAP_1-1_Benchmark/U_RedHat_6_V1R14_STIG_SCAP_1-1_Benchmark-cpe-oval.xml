@@ -64,7 +64,6 @@
       <linux:name datatype="string">centos-release</linux:name>
     </linux:rpminfo_object>
   </objects>
-  </objects>
   <states>
     <ind:family_state xmlns:ind="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.redhat.rhel6:ste:105" version="2">
       <ind:family>unix</ind:family>
